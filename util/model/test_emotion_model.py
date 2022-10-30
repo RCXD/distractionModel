@@ -154,7 +154,8 @@ def main():
     # Creating objects for face and emotiction detection
     face_detector = cv2.CascadeClassifier(
         './model/haarcascade_frontalface_default.xml')
-    emotion_model = load_model('./emotion_recognition.h5')
+    # emotion_model = load_model('./emotion_recognition.h5')
+    emotion_model = load_model(r'C:\GitHub\distractionModel\util\model\emotion_recognition.h5')
     web_cam(face_detector, emotion_model)
 
 
